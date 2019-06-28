@@ -1,0 +1,133 @@
+{
+  "vim.easymotion": true,
+  "vim.sneak": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "d",
+        "d"
+      ]
+    },
+    // {
+    //   "before": [
+    //     "<C-n>"
+    //   ],
+    //   "commands": [
+    //     ":nohl"
+    //   ]
+    // }
+    {
+      "before": [
+        "leader",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.files.save",
+      ]
+    },
+    {
+      "before": [
+        "Z",
+        "Z"
+      ],
+      "commands": [
+        ":wq"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "m"
+      ],
+      "commands": [
+        "bookmarks.toggle"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b"
+      ],
+      "commands": [
+        "bookmarks.list"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+  ],
+  // Controls the font family.
+  "editor.fontFamily": "Consolas, 'Courier New', monospace",
+  // The modifier to be used to add multiple cursors with the mouse. The Go To Definition and Open Link mouse gestures will adapt such that they do not conflict with the multicursor modifier. [Read more](https://code.visualstudio.com/docs/editor/codebasics#_multicursor-modifier).
+  //  - ctrlCmd: Maps to `Control` on Windows and Linux and to `Command` on macOS.
+  //  - alt: Maps to `Alt` on Windows and Linux and to `Option` on macOS.
+  "editor.multiCursorModifier": "ctrlCmd",
+  // Insert spaces when pressing `Tab`. This setting is overridden based on the file contents when `editor.detectIndentation` is on.
+  "editor.insertSpaces": true,
+  // Controls whether syntax highlighting should be copied into the clipboard.
+  "editor.copyWithSyntaxHighlighting": true,
+  "python.pythonPath": "D:\\sftools\\python37\\python.exe",
+  "editor.wordWrap": "on",
+  "[cpp]": {
+    "editor.quickSuggestions": true
+  },
+  "[c]": {
+    "editor.quickSuggestions": true
+  },
+  "editor.formatOnSave": true,
+  "window.title": "${dirty}${activeEditorLong}${separator}${rootName}${separator}${appName}",
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\wsl.exe",
+  "vim.statusBarColorControl": true,
+  "vim.ignorecase": false,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#005f5f",
+    "statusBar.noFolderBackground": "#005f5f",
+    "statusBar.debuggingBackground": "#005f5f"
+  },
+  "vim.overrideCopy": false,
+  "editor.tabCompletion": "on",
+  "sync.gist": "6fba3d00e73dcd0a02f5c1c7eba8e47a",
+  "workbench.startupEditor": "newUntitledFile",
+  "files.autoSave": "afterDelay",
+  "C_Cpp.updateChannel": "Insiders",
+  "diffEditor.ignoreTrimWhitespace": true
+}
